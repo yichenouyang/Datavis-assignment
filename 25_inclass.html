@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		
 		<title>D3: Drawing divs with data</title>
-		<script type="text/javascript" src="https://d3js.org/d3.v5.js"></script>
-		<style type="text/css">
+		<script src="d3.js"></script>
+		<style>
 		    #button1{
 		        font-family:helvetica;
                 font-size:18px;
@@ -24,10 +24,10 @@
         <div id="button1">Button 1</div>
         
         
-		<script type="text/javascript">
+		<script>
 	        
         //Imports a dataset from the file 
-		d3.csv("./data.csv", function(data) {
+		d3.csv("data/data.csv", function(data) {
             //within this data context, call the function that draws the circles and pass those circles your data
 		    drawCircles(data)//here you are passing the dataset from data.csv into your function
         });
